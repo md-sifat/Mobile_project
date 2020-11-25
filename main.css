@@ -1,0 +1,186 @@
+*{
+    margin: 0px;
+    padding: 0 px;
+    font-family: sans-serif;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right, #9c27b0,rgb(71, 146, 111));
+}
+
+.nav{
+    width: 80%;
+    position: sticky;
+    margin: 20px auto;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    flex-basis: 20%;
+    align-items: center;
+    color:rgb(227, 137, 57);
+    font-weight: 700;
+   
+}
+
+.logo img{
+
+}
+
+.logo span{
+    font-family: 'Nerko One', cursive;
+    font-size:50px;
+}
+
+
+
+.navitem{
+
+    flex: 1;
+    text-align:right;
+}
+
+.navitem ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin:0 20px;
+    
+}
+
+.navitem ul li a{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color:rgb(243, 243, 243);
+    font-weight: 600;
+    padding: 5px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: .4s;
+}
+.navitem ul li a:hover{
+    background-color: rgb(227, 137, 57);
+
+    
+
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color:rgb(243, 243, 243);
+    font-weight: 600;
+}
+
+.info{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 50%;
+    left: -15%;
+    transform: translateY(-50%);
+}
+#circle{
+
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    transform: rotate(0deg);
+    transition: 1s;
+    
+
+}
+
+.feature{
+
+    position: absolute;
+    display: flex;
+    color: rgb(255, 255, 255);
+}
+
+.feature div{
+    margin: 20px 12px;
+    font-family: 'Montserrat', sans-serif;
+}
+.feature div h1{
+
+    font-size: medium; 
+    
+}
+.feature div p{
+
+    font-size:small;
+}
+
+
+.one{
+    top: 463px;
+    right: 150px;
+}
+.two{
+    top: 221px;
+    left: 364px;
+    transform: rotate(-90deg);
+}
+
+.three{
+    bottom: 455px;
+    left: 137px;
+    transform: rotate(-180deg);
+
+}
+.four{
+    bottom: 223px;
+    right: 361px;
+    transform: rotate(-270deg);
+}
+
+.mobile{
+    width: 396px;
+    position: absolute;
+    top: 50%;
+    left: 28%;
+    transform: translateY(-50%);
+    z-index: 3;
+}
+
+.controls{
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.controls h4{
+    margin: 0px -15px;
+    color: white;
+    text-align: center;
+}
+
+#upBtn{
+    cursor: pointer;
+}
+
+#downBtn{
+
+    cursor: pointer;
+    transform:rotate(180deg);
+}
+
+.overlay{
+    width: 0;
+    height: 0;
+    border-top: 500px solid white;
+    border-right: 500px solid transparent;
+    border-left: 500px solid white;
+    border-bottom: 500px solid white;
+    position: absolute;
+    z-index: 2;
+   
+}
